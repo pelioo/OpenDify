@@ -147,10 +147,19 @@ for chunk in response:
 - Python 3.9+
 - pip
 
+### 创建并激活虚拟环境
+```bash
+# 创建虚拟环境
+python -m venv .venv
+
+# 激活虚拟环境
+.venv/Scripts/activate
+```
+
 ### 安装依赖
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 配置
