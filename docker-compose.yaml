@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "5000:5000"   # 宿主机端口:容器端口（保持一致）
     env_file:
-      - .env
+      - .env   # 直接引用宿主机.env文件
+    restart: unless-stopped   # 容器异常时自动重启
